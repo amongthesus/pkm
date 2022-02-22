@@ -31,7 +31,7 @@ const CardDisplay: React.FC<Props> = ({ card }) => {
       })}
     >
       {card.backgroundImage && <img src={card.backgroundImage} className={styles.backgroundImage} alt='' />}
-      {supertype?.shortName === 'Trainer' && <TrainerCard name={card.name} subname={card.subname} description={card.description} type={card.type} />}
+      {supertype?.shortName === 'Trainer' && <TrainerCard name={card.name} subname={card.subname} description={card.description} type={card.type} rarity={card.rarity} />}
       {supertype?.shortName === 'Energy' && <EnergyCard name={card.name} description={card.description} type={card.type} typeImage={card.typeImage} />}
       {supertype?.shortName === 'Pokemon' && <PokemonCard card={card} />}
       {supertype?.shortName === 'RaidBoss' && <RaidBossCard card={card} />}

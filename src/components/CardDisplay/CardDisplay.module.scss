@@ -376,6 +376,12 @@ $moveNameLeft: 29.5%;
         white-space: unset;
       }
     }
+
+    &Trainer {
+      &Outline {
+        @include outline($white);
+      }
+    }
   }
 
   @include TrainerDescription;
