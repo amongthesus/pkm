@@ -2,26 +2,26 @@
   "supertypes": [
     {
       "id": 1,
-      "shortName": "Pokemon",
-      "name": "Pokémon"
+      "short_name": "Pokemon",
+      "name": "Pok\u00e9mon"
     },
     {
       "id": 2,
-      "shortName": "Trainer",
+      "short_name": "Trainer",
       "name": "Trainer"
     },
     {
       "id": 3,
-      "shortName": "Energy",
+      "short_name": "Energy",
       "name": "Energy"
     }
   ],
-  "baseSets": [
+  "base_sets": [
     {
       "id": 1,
-      "shortName": "SS",
+      "short_name": "SS",
       "name": "Sword & Shield",
-      "subSets": [
+      "sub_sets": [
         1,
         2
       ]
@@ -30,116 +30,196 @@
   "variations": [
     {
       "id": 1,
-      "shortName": "Dynamax",
+      "short_name": "Dynamax",
       "name": "Dynamax",
-      "subtypes": [5],
-      "rarities": [4]
+      "subtypes": [
+        5
+      ],
+      "rarities": [
+        4
+      ]
     },
     {
       "id": 2,
-      "shortName": "Gigantamax",
+      "short_name": "Gigantamax",
       "name": "Gigantamax",
-      "subtypes": [5],
-      "rarities": [4]
+      "subtypes": [
+        5
+      ],
+      "rarities": [
+        4
+      ]
     }
   ],
   "rarities": [
     {
       "id": 1,
-      "shortName": "Promo",
-      "name": "Promo"
+      "short_name": "Promo",
+      "name": "Promo",
+      "has_name_outline": true,
+      "has_vstyle": true
     },
     {
       "id": 2,
-      "shortName": "FA",
+      "short_name": "FA",
       "name": "Full Art",
-      "hasNameOutline": true
+      "has_name_outline": true
     },
     {
       "id": 3,
-      "shortName": "Gold_FA",
+      "short_name": "Gold_FA",
       "name": "Golden Full Art",
-      "hasNameOutline": true,
-      "hasBlackTopText": true
+      "has_name_outline": true,
+      "has_black_top_text": true
     },
     {
       "id": 4,
-      "shortName": "Rainbow",
+      "short_name": "Rainbow",
       "name": "Rainbow"
     }
   ],
   "subtypes": [
     {
       "id": 1,
-      "shortName": "Basic",
+      "short_name": "Basic",
       "name": "Basic",
-      "supertypes": [1],
-      "types": [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      "hasVariations": false,
-      "hasPrevolve": false,
-      "hasPokedexEntry": true,
-      "rarities": [1]
+      "supertypes": [
+        1
+      ],
+      "types": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "has_variations": false,
+      "has_prevolve": false,
+      "has_pokedex_entry": true,
+      "rarities": [
+        1
+      ]
     },
     {
       "id": 2,
-      "shortName": "Stage1",
+      "short_name": "Stage1",
       "name": "Stage 1",
-      "supertypes": [1],
-      "types": [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      "hasVariations": false,
-      "hasPrevolve": true,
-      "hasPokedexEntry": true,
+      "supertypes": [
+        1
+      ],
+      "types": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "has_variations": false,
+      "has_prevolve": true,
+      "has_pokedex_entry": true,
       "rarities": []
     },
     {
       "id": 3,
-      "shortName": "Stage2",
+      "short_name": "Stage2",
       "name": "Stage 2",
-      "supertypes": [1],
-      "types": [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      "hasVariations": false,
-      "hasPrevolve": true,
-      "hasPokedexEntry": true,
+      "supertypes": [
+        1
+      ],
+      "types": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "has_variations": false,
+      "has_prevolve": true,
+      "has_pokedex_entry": true,
       "rarities": []
     },
     {
       "id": 4,
-      "shortName": "V",
+      "short_name": "V",
       "name": "V",
-      "supertypes": [1],
-      "types": [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      "hasVariations": false,
-      "hasPrevolve": false,
-      "noDescription": true,
-      "hasPokedexEntry": false,
-      "hasWhiteTopText": true,
-      "hasVStyle": true,
-      "hasVSymbol": true,
-      "rarities": [2, 3]
+      "supertypes": [
+        1
+      ],
+      "types": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "has_variations": false,
+      "has_prevolve": false,
+      "no_description": true,
+      "has_pokedex_entry": false,
+      "has_white_top_text": true,
+      "has_vstyle": true,
+      "has_vsymbol": true,
+      "rarities": [
+        2,
+        3
+      ]
     },
     {
       "id": 5,
-      "shortName": "VMax",
+      "short_name": "VMax",
       "name": "VMax",
-      "supertypes": [1],
-      "types": [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      "hasVariations": true,
-      "hasPrevolve": true,
-      "noDescription": true,
-      "hasPokedexEntry": false,
-      "hasWhiteTopText": true,
-      "hasVStyle": true,
-      "hasVMaxSymbol": true,
-      "hasNameOutline": true,
+      "supertypes": [
+        1,
+        4
+      ],
+      "types": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "has_variations": true,
+      "has_prevolve": true,
+      "no_description": true,
+      "has_pokedex_entry": false,
+      "has_white_top_text": true,
+      "has_vstyle": true,
+      "has_vmax_symbol": true,
+      "has_name_outline": true,
       "rarities": []
     },
     {
       "id": 6,
-      "shortName": "Tool",
+      "short_name": "Tool",
       "name": "Tool",
-      "supertypes": [2],
-      "types": [10],
-      "hasVariations": false,
+      "supertypes": [
+        2
+      ],
+      "types": [
+        10
+      ],
+      "has_variations": false,
       "rarities": []
     }
   ],
@@ -147,168 +227,203 @@
     {
       "id": 1,
       "number": 87,
-      "shortName": "Sword_and_Shield",
+      "short_name": "Sword_and_Shield",
       "name": "Base"
     },
     {
       "id": 2,
       "number": 88,
-      "shortName": "Rebel_Clash",
+      "short_name": "Rebel_Clash",
       "name": "Rebel Clash"
     },
     {
       "id": 3,
       "number": 0,
-      "shortName": "Promo",
+      "short_name": "Promo",
       "name": "Promo"
     }
   ],
   "rotations": [
     {
       "id": 1,
-      "shortName": "D",
+      "short_name": "D",
       "name": "D"
     }
   ],
   "types": [
     {
       "id": 1,
-      "shortName": "Grass",
+      "short_name": "Grass",
       "name": "Grass",
-      "supertypes": [1],
-      "hasSubtypes": true,
-      "subtypeOptional": false,
-      "isEnergy": true,
+      "supertypes": [
+        1,
+        4
+      ],
+      "has_subtypes": true,
+      "subtype_optional": false,
+      "is_energy": true,
       "rarities": []
     },
     {
       "id": 2,
-      "shortName": "Fire",
+      "short_name": "Fire",
       "name": "Fire",
-      "supertypes": [1],
-      "hasSubtypes": true,
-      "subtypeOptional": false,
-      "isEnergy": true,
+      "supertypes": [
+        1,
+        4
+      ],
+      "has_subtypes": true,
+      "subtype_optional": false,
+      "is_energy": true,
       "rarities": []
     },
     {
       "id": 3,
-      "shortName": "Water",
+      "short_name": "Water",
       "name": "Water",
-      "supertypes": [1],
-      "hasSubtypes": true,
-      "subtypeOptional": false,
-      "isEnergy": true,
+      "supertypes": [
+        1,
+        4
+      ],
+      "has_subtypes": true,
+      "subtype_optional": false,
+      "is_energy": true,
       "rarities": []
     },
     {
       "id": 4,
-      "shortName": "Lightning",
+      "short_name": "Lightning",
       "name": "Lightning",
-      "supertypes": [1],
-      "hasSubtypes": true,
-      "subtypeOptional": false,
-      "isEnergy": true,
+      "supertypes": [
+        1,
+        4
+      ],
+      "has_subtypes": true,
+      "subtype_optional": false,
+      "is_energy": true,
       "rarities": []
     },
     {
       "id": 5,
-      "shortName": "Psychic",
+      "short_name": "Psychic",
       "name": "Psychic",
-      "supertypes": [1],
-      "hasSubtypes": true,
-      "subtypeOptional": false,
-      "isEnergy": true,
+      "supertypes": [
+        1,
+        4
+      ],
+      "has_subtypes": true,
+      "subtype_optional": false,
+      "is_energy": true,
       "rarities": []
     },
     {
       "id": 6,
-      "shortName": "Fighting",
+      "short_name": "Fighting",
       "name": "Fighting",
-      "supertypes": [1],
-      "hasSubtypes": true,
-      "subtypeOptional": false,
-      "isEnergy": true,
+      "supertypes": [
+        1,
+        4
+      ],
+      "has_subtypes": true,
+      "subtype_optional": false,
+      "is_energy": true,
       "rarities": []
     },
     {
       "id": 7,
-      "shortName": "Dark",
+      "short_name": "Dark",
       "name": "Dark",
-      "supertypes": [1],
-      "hasSubtypes": true,
-      "subtypeOptional": false,
+      "supertypes": [
+        1,
+        4
+      ],
+      "has_subtypes": true,
+      "subtype_optional": false,
       "rarities": [],
-      "isEnergy": true,
-      "hasWhiteText": true
+      "is_energy": true,
+      "has_white_text": true
     },
     {
       "id": 8,
-      "shortName": "Metal",
+      "short_name": "Metal",
       "name": "Metal",
-      "supertypes": [1],
-      "hasSubtypes": true,
-      "subtypeOptional": false,
-      "isEnergy": true,
+      "supertypes": [
+        1,
+        4
+      ],
+      "has_subtypes": true,
+      "subtype_optional": false,
+      "is_energy": true,
       "rarities": []
     },
     {
       "id": 9,
-      "shortName": "Colorless",
+      "short_name": "Colorless",
       "name": "Colorless",
-      "supertypes": [1],
-      "hasSubtypes": true,
-      "subtypeOptional": false,
-      "isEnergy": true,
+      "supertypes": [
+        1,
+        4
+      ],
+      "has_subtypes": true,
+      "subtype_optional": false,
+      "is_energy": true,
       "rarities": []
     },
     {
       "id": 10,
-      "shortName": "Item",
+      "short_name": "Item",
       "name": "Item",
-      "supertypes": [2],
-      "hasSubtypes": true,
-      "subtypeOptional": true,
+      "supertypes": [
+        2
+      ],
+      "has_subtypes": true,
+      "subtype_optional": true,
       "rarities": []
     },
     {
       "id": 11,
-      "shortName": "Supporter",
+      "short_name": "Supporter",
       "name": "Supporter",
-      "supertypes": [2],
-      "hasSubname": true,
-      "rarities": []
+      "supertypes": [
+        2
+      ],
+      "has_subname": true,
+      "rarities": [2]
     },
     {
       "id": 12,
-      "shortName": "Base",
+      "short_name": "Base",
       "name": "Base",
-      "supertypes": [3],
+      "supertypes": [
+        3
+      ],
       "rarities": []
     },
     {
       "id": 13,
-      "shortName": "Special",
+      "short_name": "Special",
       "name": "Special",
-      "supertypes": [3],
-      "hasSpecialStyle": true,
+      "supertypes": [
+        3
+      ],
+      "has_special_style": true,
       "rarities": []
     }
   ],
-  "rarityIcons": [
+  "rarity_icons": [
     {
       "id": 1,
-      "shortName": "common",
+      "short_name": "common",
       "name": "Common"
     },
     {
       "id": 2,
-      "shortName": "uncommon",
+      "short_name": "uncommon",
       "name": "Uncommon"
     },
     {
       "id": 3,
-      "shortName": "rare",
+      "short_name": "rare",
       "name": "Rare"
     }
   ]
