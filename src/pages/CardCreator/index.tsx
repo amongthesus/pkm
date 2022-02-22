@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, Dispatch, SetStateAction } from 'react';
+import React, { useState, useEffect, useRef, Dispatch, SetStateAction, useCallback } from 'react';
 import { Variation, Type, Subtype, Set, Rarity, BaseSet, Rotation, RarityIcon, MoveType, Card, ImportedCard, ImportedMoveType, Supertype } from 'interfaces';
 import htmlToImage from 'html-to-image';
 import download from 'downloadjs';
@@ -25,7 +25,6 @@ const CardCreatorPage: React.FC<Props> = ({ card }) => {
   const dispatch = useDispatch();
   const cardOptions = useSelector(selectCardOptions);
 
-  const dispatched = useRef<boolean>(false);
   const importingCard = useRef<boolean>(false);
   const initialImported = useRef<boolean>(false);
   const [importingTrigger, setImportingTrigger] = useState<boolean>(false);
@@ -98,12 +97,14 @@ const CardCreatorPage: React.FC<Props> = ({ card }) => {
   const [move3Text, setMove3Text] = useState<string>('');
   const [move3Damage, setMove3Damage] = useState<string>('');
 
+  const dataInitialised = useCallback((): boolean => !!supertype, [supertype]);
+
   useEffect(() => {
     dispatch(getCardOptions());
   }, []);
 
   useEffect(() => {
-    if(dispatched.current) {
+    if(!dataInitialised()) {
       setSupertype(cardOptions.supertypes[0]);
       setType(cardOptions.types[0]);
       setWeaknessType(cardOptions.types[0]);
@@ -112,7 +113,7 @@ const CardCreatorPage: React.FC<Props> = ({ card }) => {
       setSubtype(cardOptions.subtypes[0]);
       setRotation(cardOptions.rotations[0]);
     }
-  }, [cardOptions]);
+  }, [cardOptions, dataInitialised]);
 
   /**
    * Changes the types/subtypes etc to the first available one within their parent
@@ -560,7 +561,7 @@ const CardCreatorPage: React.FC<Props> = ({ card }) => {
               })}
             </Select>
           }
-          {(supertype?.shortName === 'Pokemon' && (type?.rarities[0] || subtype?.rarities[0] || variation?.rarities[0])) &&
+          {((supertype?.shortName === 'Pokemon' && (type?.rarities[0] || subtype?.rarities[0] || variation?.rarities[0]) )|| (supertype?.shortName === 'Trainer' && type?.rarities[0])) &&
             <Select name='Rarity' shortName='rarity' selectRef={rarityRef} onChange={e => setRarity(cardOptions.rarities.find((a: Rarity) => a.id === +e.currentTarget.value))}>
               <option value={'default'}>{'Default'}</option>
               {cardOptions.rarities.map((value: Rarity, i: number) => {
