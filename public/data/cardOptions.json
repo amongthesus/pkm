@@ -57,7 +57,7 @@
       "short_name": "Promo",
       "name": "Promo",
       "has_name_outline": true,
-      "has_vstyle": true
+      "has_v_style": true
     },
     {
       "id": 2,
@@ -180,8 +180,8 @@
       "no_description": true,
       "has_pokedex_entry": false,
       "has_white_top_text": true,
-      "has_vstyle": true,
-      "has_vsymbol": true,
+      "has_v_style": true,
+      "has_v_symbol": true,
       "rarities": [
         2,
         3
@@ -211,8 +211,8 @@
       "no_description": true,
       "has_pokedex_entry": false,
       "has_white_top_text": true,
-      "has_vstyle": true,
-      "has_vmax_symbol": true,
+      "has_v_style": true,
+      "has_v_max_symbol": true,
       "has_name_outline": true,
       "rarities": []
     },
