@@ -24,6 +24,7 @@ export interface Rarity extends GenericInterface {
   hasNameOutline?: boolean,
   hasBlackTopText?: boolean,
   hasVStyle?: boolean,
+  hasStarSymbol?: boolean,
 }
 
 export interface Variation extends GenericInterface {
