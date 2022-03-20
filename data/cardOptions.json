@@ -83,6 +83,12 @@
       "name": "Full Art",
       "has_name_outline": false,
       "has_v_style": true
+    },
+    {
+      "id": 6,
+      "short_name": "Gold_Star",
+      "name": "Gold Star",
+      "has_star_symbol": true
     }
   ],
   "subtypes": [
@@ -108,7 +114,8 @@
       "has_prevolve": false,
       "has_pokedex_entry": true,
       "rarities": [
-        1
+        1,
+        6
       ]
     },
     {
