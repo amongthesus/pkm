@@ -243,6 +243,60 @@
     },
     {
       "id": 3,
+      "number": 89,
+      "short_name": "Darkness_Ablaze",
+      "name": "Darkness Ablaze"
+    },
+    {
+      "id": 4,
+      "number": 90,
+      "short_name": "ChampPath",
+      "name": "Champions Path"
+    },
+    {
+      "id": 5,
+      "number": 91,
+      "short_name": "VividVolt",
+      "name": "Vivid Voltage"
+    },
+    {
+      "id": 6,
+      "number": 92,
+      "short_name": "ShiningFates",
+      "name": "Shining Fates"
+    },
+    {
+      "id": 7,
+      "number": 93,
+      "short_name": "BatStyles",
+      "name": "Battle Styles"
+    },
+    {
+      "id": 8,
+      "number": 94,
+      "short_name": "ChilReign",
+      "name": "Evolving Skies"
+    },
+    {
+      "id": 9,
+      "number": 95,
+      "short_name": "EvoSkies",
+      "name": "Evolving Skies"
+    },
+    {
+      "id": 10,
+      "number": 96,
+      "short_name": "FusStrike",
+      "name": "Fusion Strike"
+    },
+    {
+      "id": 11,
+      "number": 97,
+      "short_name": "BrilStars",
+      "name": "Brilliant Stars"
+    },
+    {
+      "id": 12,
       "number": 0,
       "short_name": "Promo",
       "name": "Promo"
@@ -253,6 +307,16 @@
       "id": 1,
       "short_name": "D",
       "name": "D"
+    },
+    {
+      "id": 2,
+      "short_name": "E",
+      "name": "E"
+    },
+    {
+      "id": 3,
+      "short_name": "F",
+      "name": "F"
     }
   ],
   "types": [
