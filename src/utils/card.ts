@@ -85,7 +85,6 @@ const cardOptionsToImage = (options: ImagePathOptions, folder?: string, supertyp
       }
     }
   });
-  console.log(filePath);
   return `${filePath}.png`;
 }
 
