@@ -1,4 +1,7 @@
 # Redux Pokémon Card Maker
+
+## ⚠️ This repository has been depricated. Check out the new application [here](https://github.com/lvandernoll/pokecardmaker.net)
+
 ## Installation
 Requirements:
 - Node >= 8.10
